@@ -1,0 +1,79 @@
+:root {
+    --papier:#fbf7f0;
+    --inkt: #2b2b2b;
+    --gedempt: #6b6b6b;
+    --accent: #b5451b;
+    --zebra: #f1e9dc;
+    --koppen-font: Georgia,sans-serif;
+    --text-font: Verdana;
+}
+
+body {
+    background-color: var(--papier);
+    color: var(--inkt);
+    font-family: var(--text-font); 
+    line-height: 1.6;
+}
+
+h1,h2,h3 {
+    font-family: var(--koppen-font);
+    font-weight: normal;
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.75rem;
+
+}
+h3 {
+    color:var(--gedempt);
+}
+.slogan {
+    color: var(--gedempt);
+    font-style: oblique;
+}
+
+nav a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+nav a:hover,
+nav a:focus{
+    color: var(--inkt);
+    text-decoration: underline;
+}
+
+.intro {
+    font-size: 1.25rem;
+}
+
+.kaart>li:nth-child(odd) {
+    background-color:var(--zebra);
+}
+.prijs {
+    color: var(--gedempt);
+    font-style:italic;
+}
+article p a {
+    color: var(--accent);
+}
+article p a:hover,
+article p a:focus {
+    color: var(--papier);
+    background-color: var(--accent);
+}
+
+strong {
+    color: var(--accent);
+}
+
+footer,
+footer a {
+    text-align: center;
+    color: var(--gedempt);
+}

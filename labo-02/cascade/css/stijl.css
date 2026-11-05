@@ -16,15 +16,17 @@ body {
 a {
   color: green;
 }
+/*#is groen*/
 
 /* ---- vraag 2 ---- */
 .v2-tekst {
   color: red;
 }
-
+/*de text is rood word doorstreept*/
 .v2-tekst {
   color: blue;
 }
+/*text is blauw*/
 
 /* ---- vraag 3 ---- */
 .opvallend {
@@ -34,6 +36,7 @@ a {
 em {
   color: blue;
 }
+/*rood*/
 
 /* ---- vraag 4 ---- */
 .v4 > a {
@@ -43,6 +46,7 @@ em {
 .v4 a {
   color: red;
 }
+/*geen.v4 dus groen*/
 
 /* ---- vraag 5 ---- */
 .een.twee.drie {
@@ -52,6 +56,7 @@ em {
 #v5-tekst {
   color: blue;
 }
+/*blue*/
 
 /* ---- vraag 6 ---- */
 .v6 {
@@ -61,16 +66,19 @@ em {
 .v6-tekst {
   color: blue;
 }
+/*blue*/
 
 /* ---- vraag 7 ---- */
 .v7 {
   color: red;
 }
+/*niks*/
 
 /* ---- vraag 8 ---- */
 .v8-tekst {
   color: red;
 }
+/*blue*/
 
 /* ---- vraag 9 ---- */
 h3 {
@@ -80,6 +88,7 @@ h3 {
 .v9-tekst {
   color: blue;
 }
+/*blue*/
 
 /* ---- vraag 10 ---- */
 .v10-tekst {
@@ -87,3 +96,4 @@ h3 {
   font-size: 1.5rem
   color: blue;
 }
+/*green*/

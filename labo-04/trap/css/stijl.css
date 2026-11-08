@@ -2,7 +2,51 @@
 
 /* === tokens === */
 :root {
+    --een: #1446a0;
+    --twee: #db3069; 
+    --Drie: #f5d547;
+    --vier: #ebebd3;  
+    --pen:white;
+    --accent: #2b2b2b ;
+    --font: Arial;
 
 }
+body{
+    font-family: var(--font);
+    
 
+}
 /* === your rules === */
+.trap {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    min-height: 100vh;
+    
+}
+main>div{
+    display:grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--pen);
+}
+main div:first-child{
+    background-color: var(--een);
+}
+main div:nth-child(2){
+    background-color: var(--twee);
+    grid-column: 2;
+    grid-row: 2;
+}
+main div:nth-child(3){
+    background-color: var(--Drie);
+    grid-column: 3;
+    grid-row: 3;
+}
+main div:nth-child(4){
+    background-color: var(--vier);
+    grid-column: 4;
+    grid-row: 4;
+    color: var(--accent);
+}

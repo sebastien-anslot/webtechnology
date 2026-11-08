@@ -2,7 +2,66 @@
 
 /* === tokens === */
 :root {
-
+--a:#e9493f;
+--b:#edd24a; 
+--c:#072f55; 
+--d:#52a51a; 
+--e:#efaad9; 
+--f:#a5f129; 
+--g:#ebc47a; 
+--h:#e8882c; 
 }
 
 /* === your rules === */
+main{
+    display:grid;
+    
+    grid-template-areas: 
+    "a . . B"
+    "c d e f"
+    "g . . h" ;
+    gap:1rem;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+div{
+    text-align: right;
+    font-family: Arial;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.5rem;
+    color:white;
+}
+.a {
+    grid-area: a;
+    background-color: var(--a);
+    
+}
+.b{
+    grid-area: B;
+    background-color: var(--b);
+}
+.c {
+    grid-area: c;
+    background-color: var(--c);
+}
+.d{
+    grid-area: d;
+    background-color: var(--d);
+}
+.e {
+    grid-area: e;
+    background-color: var(--e);
+}
+.f{
+    grid-area: f;
+    background-color: var(--f);
+}
+.g {
+    grid-area: g;
+    background-color: var(--g);
+}
+.h{
+    grid-area: h;
+    background-color: var(--h);
+}

@@ -1,0 +1,39 @@
+/* stijl.css - labo 6, kleurvlakken (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === base: narrow screens first === */
+
+/* === media queries: below the base rules === */
+main{
+    display:grid;
+    min-height: 100svh;
+}
+.rood{
+    background-color: red;
+}
+.geel{
+    background-color: rgb(229, 255, 0);
+}
+.groen{
+    background-color: rgb(0, 255, 21);
+}
+.blauw{
+    background-color: blue;
+}
+
+@media(min-width:37.5rem){
+    main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media(min-width:50rem){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

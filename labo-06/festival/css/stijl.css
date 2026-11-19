@@ -1,0 +1,123 @@
+/* stijl.css - labo 6, festival (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --color-paper: #fff8ee;
+    --color-ink: #1a1a1a;
+    --color-muted: #6b6b6b;
+    --color-accent: #d6341c;
+    --color-accent-text: #ffffff;
+    --font-body: Verdana, sans-serif;
+    --font-heading: Georgia, serif;
+    --space: 1.5rem;
+}
+body{
+    background-color: var(--color-paper);
+    
+}
+/* === base: narrow screens first === */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.logo{
+    color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+nav a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 2rem;
+  color: var(--color-accent);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a.actief {
+  background-color: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #ffffff;
+  color: var(--color-ink);
+}
+
+
+.held{
+    background-color: var(--color-accent);
+    color: var(--color-accent-text);
+    padding: clamp(2rem, 8vw ,6rem) clamp(1rem, 5vw, 4rem);
+}
+.held h1{
+    font-size: clamp(2rem,5vw + 1rem, 4rem);
+    line-height: 1.1;
+}
+#programma{
+    max-width:  44rem;
+    padding: clamp(2rem, 8vw ,6rem) clamp(1.5rem,5vw,3rem); 
+    margin: 0 auto;  
+}
+.programma>*{
+    display: flex;
+    flex-wrap: wrap;
+}
+.programma {
+    padding-left: 0;
+    margin: 0 auto;
+}
+main li{
+    margin-bottom: 1rem;
+    border-bottom:1px solid black ;
+}
+.programma time{
+    color: var(--color-accent);
+    font-weight: 200;
+    min-width: 4rem;
+}
+.programma strong{
+    margin-right: auto;
+}
+.programma span{
+    color: var(--color-muted);
+}
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+}
+/* === media queries: below the base rules === */
+
+@media(min-width:50rem){
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media(min-width:75rem){
+    header{
+        flex-direction: row;
+    }
+    .logo{
+        margin-right: auto;
+    }
+}
